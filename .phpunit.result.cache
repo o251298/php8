@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Unit\\StringHelperTest::getSmallString":3,"Unit\\DataBaseTest::test_connect":3,"Unit\\DataBaseTest::test_exception":3},"times":{"Unit\\StringHelperTest::test_toUpper":0.277,"Unit\\StringHelperTest::toUpper":0,"Unit\\StringHelperTest::getSmallString":0,"Unit\\DataBaseTest::test_connect":0.006,"Unit\\DataBaseTest::test_exception":1.181}}

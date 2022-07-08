@@ -1,0 +1,46 @@
+version: '3.3'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: .docker/Dockerfile
+        image: 'lessonsphp'
+        ports:
+            - 8080:80
+        volumes:
+            - ./:/var/www/html
+    db:
+        image: mysql:5.7
+        restart: always
+        ports:
+            - "3306:3306"
+        environment:
+            MYSQL_DATABASE: 'php_8'
+            MYSQL_ALLOW_EMPTY_PASSWORD: 1
+            MYSQL_ROOT_PASSWORD: "o251298"
+        volumes:
+            - ./db:/var/lib/mysql
+    postgres:
+        image: postgres:12.3-alpine
+        container_name: postgres
+        restart: unless-stopped
+        ports:
+            - "5433:5432"
+        volumes:
+            - ./docker/postgres:/var/lib/postgresql/data
+        environment:
+            POSTGRES_USER: root
+            POSTGRES_PASSWORD: root
+            POSTGRES_DB: cooper
+            POSTGRES_HOST_AUTH_METHOD: "trust"
+
+    phppgadmin:
+        container_name: phppgadmin
+        image: neimheadh/phppgadmin:latest
+        ports:
+            - "10081:80"
+        environment:
+            - POSTGRES_HOST=postgres
+            - POSTGRES_PORT=5433
+            - POSTGRES_USER=root
+            - POSTGRES_PASS=root

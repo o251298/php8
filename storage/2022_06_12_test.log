@@ -1,0 +1,28 @@
+ttr
+sda
+sda
+#0 /var/www/html/app/Controllers/HomeController.php(18): App\Services\Debugger\BasicDebugger->save(1)
+#1 [internal function]: App\Controllers\HomeController->index(Array)
+#2 /var/www/html/app/Services/Router/Router.php(38): call_user_func(Array, Array)
+#3 /var/www/html/public/index.php(7): App\Services\Router\Router->run()
+#4 {main}
+#0 /var/www/html/app/Controllers/HomeController.php(18): App\Services\Debugger\BasicDebugger->save(12)
+#1 [internal function]: App\Controllers\HomeController->index(Array)
+#2 /var/www/html/app/Services/Router/Router.php(38): call_user_func(Array, Array)
+#3 /var/www/html/public/index.php(7): App\Services\Router\Router->run()
+#4 {main}
+#0 /var/www/html/app/Controllers/HomeController.php(18): App\Services\Debugger\BasicDebugger->save(12)
+#1 [internal function]: App\Controllers\HomeController->index(Array)
+#2 /var/www/html/app/Services/Router/Router.php(38): call_user_func(Array, Array)
+#3 /var/www/html/public/index.php(7): App\Services\Router\Router->run()
+#4 {main}
+#0 /var/www/html/app/Controllers/HomeController.php(15): App\Services\Debugger\BasicDebugger->save(12)
+#1 [internal function]: App\Controllers\HomeController->index(Array)
+#2 /var/www/html/app/Services/Router/Router.php(38): call_user_func(Array, Array)
+#3 /var/www/html/public/index.php(7): App\Services\Router\Router->run()
+#4 {main}
+#0 /var/www/html/app/Controllers/HomeController.php(16): App\Services\Debugger\BasicDebugger->save(12)
+#1 [internal function]: App\Controllers\HomeController->index(Array)
+#2 /var/www/html/app/Services/Router/Router.php(38): call_user_func(Array, Array)
+#3 /var/www/html/public/index.php(7): App\Services\Router\Router->run()
+#4 {main}
